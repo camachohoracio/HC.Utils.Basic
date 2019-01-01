@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="lcpi.data.oledb" Version="1.9.1.3601" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Data.OracleClient" Version="1.0.8" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HC.Analytics.Std\HC.Analytics.csproj" />
+    <ProjectReference Include="..\HC.Core.Std\HC.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Data\Db\dsServerConfig.Designer.cs">
+      <DependentUpon>dsServerConfig.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Data\Db\Sql\DsDataTransfer.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DsDataTransfer.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\Db\Sql\DsDbSettings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DsDbSettings.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\Db\Sql\DsFieldDetails.Designer.cs">
+      <DependentUpon>DsFieldDetails.xss</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\Db\dsServerConfig.xsc">
+      <DependentUpon>dsServerConfig.xsd</DependentUpon>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsServerConfig.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\Db\dsServerConfig.xsd">
+      <LastGenOutput>dsServerConfig.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\Db\dsServerConfig.xss">
+      <DependentUpon>dsServerConfig.xsd</DependentUpon>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsServerConfig.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\Db\Sql\DsDataTransfer.xsd">
+      <LastGenOutput>DsDataTransfer.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\Db\Sql\DsDbSettings.xsd">
+      <LastGenOutput>DsDbSettings.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\Db\Sql\DsFieldDetails.xsc">
+      <DependentUpon>DsFieldDetails.xsd</DependentUpon>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsFieldDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\Db\Sql\DsFieldDetails.xsd">
+      <LastGenOutput>DsFieldDetails.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\Db\Sql\DsFieldDetails.xss">
+      <DependentUpon>DsFieldDetails.xsd</DependentUpon>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsFieldDetails.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

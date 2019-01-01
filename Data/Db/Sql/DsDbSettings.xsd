@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema id="DsDbSettings" targetNamespace="http://tempuri.org/DsDbSettings.xsd" xmlns:mstns="http://tempuri.org/DsDbSettings.xsd" xmlns="http://tempuri.org/DsDbSettings.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsDbSettings" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsDbSettings" msprop:Generator_UserDSName="DsDbSettings" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="connection" msprop:Generator_UserTableName="connection" msprop:Generator_RowDeletedName="connectionRowDeleted" msprop:Generator_TableClassName="connectionDataTable" msprop:Generator_RowChangedName="connectionRowChanged" msprop:Generator_RowClassName="connectionRow" msprop:Generator_RowChangingName="connectionRowChanging" msprop:Generator_RowEvArgName="connectionRowChangeEvent" msprop:Generator_RowEvHandlerName="connectionRowChangeEventHandler" msprop:Generator_TablePropName="connection" msprop:Generator_TableVarName="tableconnection" msprop:Generator_RowDeletingName="connectionRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="server" msprop:Generator_UserColumnName="server" msprop:Generator_ColumnPropNameInRow="server" msprop:Generator_ColumnVarNameInTable="columnserver" msprop:Generator_ColumnPropNameInTable="serverColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="database" msprop:Generator_UserColumnName="database" msprop:Generator_ColumnPropNameInRow="database" msprop:Generator_ColumnVarNameInTable="columndatabase" msprop:Generator_ColumnPropNameInTable="databaseColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

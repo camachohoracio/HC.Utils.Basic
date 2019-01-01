@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema id="DsDataTransfer" targetNamespace="http://tempuri.org/DsDataTransfer.xsd" xmlns:mstns="http://tempuri.org/DsDataTransfer.xsd" xmlns="http://tempuri.org/DsDataTransfer.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsDataTransfer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsDataTransfer" msprop:Generator_UserDSName="DsDataTransfer" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="data_transfer" msprop:Generator_UserTableName="data_transfer" msprop:Generator_RowDeletedName="data_transferRowDeleted" msprop:Generator_TableClassName="data_transferDataTable" msprop:Generator_RowChangedName="data_transferRowChanged" msprop:Generator_RowClassName="data_transferRow" msprop:Generator_RowChangingName="data_transferRowChanging" msprop:Generator_RowEvArgName="data_transferRowChangeEvent" msprop:Generator_RowEvHandlerName="data_transferRowChangeEventHandler" msprop:Generator_TablePropName="data_transfer" msprop:Generator_TableVarName="tabledata_transfer" msprop:Generator_RowDeletingName="data_transferRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="transfer_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_UserColumnName="transfer_id" msprop:Generator_ColumnPropNameInRow="transfer_id" msprop:Generator_ColumnVarNameInTable="columntransfer_id" msprop:Generator_ColumnPropNameInTable="transfer_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="transfer_description" msprop:Generator_UserColumnName="transfer_description" msprop:Generator_ColumnPropNameInRow="transfer_description" msprop:Generator_ColumnVarNameInTable="columntransfer_description" msprop:Generator_ColumnPropNameInTable="transfer_descriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="source_path" msprop:Generator_UserColumnName="source_path" msprop:Generator_ColumnPropNameInRow="source_path" msprop:Generator_ColumnVarNameInTable="columnsource_path" msprop:Generator_ColumnPropNameInTable="source_pathColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="destination_path" msprop:Generator_UserColumnName="destination_path" msprop:Generator_ColumnPropNameInRow="destination_path" msprop:Generator_ColumnVarNameInTable="columndestination_path" msprop:Generator_ColumnPropNameInTable="destination_pathColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="data_transfer_details" msprop:Generator_UserTableName="data_transfer_details" msprop:Generator_RowDeletedName="data_transfer_detailsRowDeleted" msprop:Generator_TableClassName="data_transfer_detailsDataTable" msprop:Generator_RowChangedName="data_transfer_detailsRowChanged" msprop:Generator_RowClassName="data_transfer_detailsRow" msprop:Generator_RowChangingName="data_transfer_detailsRowChanging" msprop:Generator_RowEvArgName="data_transfer_detailsRowChangeEvent" msprop:Generator_RowEvHandlerName="data_transfer_detailsRowChangeEventHandler" msprop:Generator_TablePropName="data_transfer_details" msprop:Generator_TableVarName="tabledata_transfer_details" msprop:Generator_RowDeletingName="data_transfer_detailsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="transfer_id" msprop:Generator_UserColumnName="transfer_id" msprop:Generator_ColumnPropNameInRow="transfer_id" msprop:Generator_ColumnVarNameInTable="columntransfer_id" msprop:Generator_ColumnPropNameInTable="transfer_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="file_name" msprop:Generator_UserColumnName="file_name" msprop:Generator_ColumnPropNameInRow="file_name" msprop:Generator_ColumnVarNameInTable="columnfile_name" msprop:Generator_ColumnPropNameInTable="file_nameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DataTransferItemKey1">
+      <xs:selector xpath=".//mstns:data_transfer" />
+      <xs:field xpath="mstns:transfer_id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="data_transfer_data_transfer_details" msdata:parent="data_transfer" msdata:child="data_transfer_details" msdata:parentkey="transfer_id" msdata:childkey="transfer_id" msprop:Generator_UserRelationName="data_transfer_data_transfer_details" msprop:Generator_RelationVarName="relationdata_transfer_data_transfer_details" msprop:Generator_UserChildTable="data_transfer_details" msprop:Generator_UserParentTable="data_transfer" msprop:Generator_ParentPropName="data_transferRow" msprop:Generator_ChildPropName="Getdata_transfer_detailsRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

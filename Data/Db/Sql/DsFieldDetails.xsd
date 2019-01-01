@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema id="FieldDetailsDataset" targetNamespace="http://tempuri.org/FieldDetailsDataset.xsd" xmlns:mstns="http://tempuri.org/FieldDetailsDataset.xsd" xmlns="http://tempuri.org/FieldDetailsDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FieldDetailsDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="FieldDetailsDataset" msprop:Generator_UserDSName="FieldDetailsDataset" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="field_details" msprop:Generator_UserTableName="field_details" msprop:Generator_RowDeletedName="field_detailsRowDeleted" msprop:Generator_TableClassName="field_detailsDataTable" msprop:Generator_RowChangedName="field_detailsRowChanged" msprop:Generator_RowClassName="field_detailsRow" msprop:Generator_RowChangingName="field_detailsRowChanging" msprop:Generator_RowEvArgName="field_detailsRowChangeEvent" msprop:Generator_RowEvHandlerName="field_detailsRowChangeEventHandler" msprop:Generator_TablePropName="field_details" msprop:Generator_TableVarName="tablefield_details" msprop:Generator_RowDeletingName="field_detailsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInTable="idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="description" msprop:Generator_UserColumnName="description" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInTable="descriptionColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="field_detailsKey1">
+      <xs:selector xpath=".//mstns:field_details" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
